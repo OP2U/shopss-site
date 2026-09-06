@@ -27,3 +27,8 @@ git push
 ```
 
 The VPS deployment timer will pull the new `main` commit automatically.
+
+## v2.2
+
+- Added real project screenshots to the CS2 Match Tracker and Discord Rich Presence pages.
+- Added screenshot styling and cache-busting for updated CSS.

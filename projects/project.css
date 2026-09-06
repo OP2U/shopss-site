@@ -1,4 +1,4 @@
-@import url('../styles.css?v=2.1');
+@import url('../styles.css?v=2.2');
 
 .project-page {
   padding: 72px 0 96px;
@@ -14,7 +14,7 @@
 .project-back:hover { color: var(--text); }
 
 .project-hero {
-  padding: 0 0 62px;
+  padding: 0 0 44px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -34,6 +34,28 @@
   color: var(--muted);
   font-size: 1.08rem;
   line-height: 1.7;
+}
+
+.project-media {
+  margin-top: 34px;
+}
+
+.project-media h2 {
+  margin: 0 0 14px;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.project-media .lead-note {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: .84rem;
+}
+
+.project-media-grid {
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  gap: 18px;
 }
 
 .project-detail-grid {
@@ -67,6 +89,9 @@
 
 .detail-card .tags { margin-top: 8px; }
 
-@media (max-width: 720px) {
-  .project-detail-grid { grid-template-columns: 1fr; }
+@media (max-width: 860px) {
+  .project-media-grid,
+  .project-detail-grid {
+    grid-template-columns: 1fr;
+  }
 }
