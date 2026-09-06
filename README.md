@@ -32,3 +32,8 @@ The VPS deployment timer will pull the new `main` commit automatically.
 
 - Added real project screenshots to the CS2 Match Tracker and Discord Rich Presence pages.
 - Added screenshot styling and cache-busting for updated CSS.
+
+
+## v2.3
+
+- Added Cloudflare Web Analytics to the homepage and both project pages.
