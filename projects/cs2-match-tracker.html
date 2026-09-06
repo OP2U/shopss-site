@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3C205B">
+  <title>CS2 Match Tracker — SHOPSS</title>
+  <link rel="icon" href="../assets/shopss-logo.png">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html">
+      <img src="../assets/shopss-logo.png" alt="">
+      <span>SHOPSS</span>
+    </a>
+    <nav><a href="../index.html#projects">Projects</a><a href="https://github.com/OP2U" target="_blank" rel="noreferrer">GitHub</a></nav>
+  </header>
+
+  <main class="project-page">
+    <a class="project-back" href="../index.html#projects">← Back to projects</a>
+
+    <section class="project-hero">
+      <span class="status live">LIVE</span>
+      <h1>CS2 Match Tracker</h1>
+      <p class="project-lead">
+        A Discord bot that watches Valve CS2 matchmaking activity and automatically
+        publishes polished match reports for tracked players and their teams.
+      </p>
+    </section>
+
+    <section class="project-detail-grid">
+      <article class="detail-card">
+        <h2>What it does</h2>
+        <ul>
+          <li>Tracks multiple players across multiple Discord servers.</li>
+          <li>Builds team match cards with K/D/A, ADR, HS%, rating, MVPs, and more.</li>
+          <li>Adds achievements, recent form, Steam profile links, and Premier rating changes.</li>
+          <li>Runs continuously on a DigitalOcean VPS.</li>
+        </ul>
+      </article>
+
+      <article class="detail-card">
+        <h2>Stack</h2>
+        <div class="tags">
+          <span>Python</span>
+          <span>discord.py</span>
+          <span>SQLite</span>
+          <span>Leetify API</span>
+          <span>Pillow</span>
+          <span>systemd</span>
+        </div>
+      </article>
+
+      <article class="detail-card">
+        <h2>Deployment</h2>
+        <p>
+          The bot runs as its own systemd service on Ubuntu, separate from the website.
+          That keeps it online even when the local PC is off.
+        </p>
+      </article>
+
+      <article class="detail-card">
+        <h2>Status</h2>
+        <p>
+          Running in production and designed to support per-server setup, tracked-player
+          management, reposting, and safe migration from the original single-server build.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

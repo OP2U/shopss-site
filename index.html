@@ -4,118 +4,216 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#3C205B">
-  <meta name="description" content="SHOPSS — projects, links, and things I build.">
+  <meta name="description" content="SHOPSS — projects, systems, and things I build.">
+  <meta property="og:title" content="SHOPSS">
+  <meta property="og:description" content="Projects, systems, and things I build.">
+  <meta property="og:image" content="assets/shopss-logo.png">
   <title>SHOPSS</title>
   <link rel="icon" href="assets/shopss-logo.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="ambient ambient-a"></div>
-  <div class="ambient ambient-b"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="glow glow-one" aria-hidden="true"></div>
+  <div class="glow glow-two" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="SHOPSS home">
+    <a class="brand" href="#top">
       <img src="assets/shopss-logo.png" alt="">
       <span>SHOPSS</span>
     </a>
 
-    <nav aria-label="Primary navigation">
+    <nav>
       <a href="#projects">Projects</a>
+      <a href="#stack">Stack</a>
       <a href="#links">Links</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="hero-copy">
+    <section class="hero reveal">
+      <div class="hero-left">
         <div class="eyebrow">
-          <span class="status-dot"></span>
-          <span>ONLINE</span>
+          <span class="pulse"></span>
+          <span>SYSTEM ONLINE</span>
         </div>
 
         <h1>SHOPSS</h1>
-        <p class="tagline">Projects, experiments, and things I build.</p>
+        <p class="hero-copy">
+          Projects, systems, and experiments I actually use.
+        </p>
 
         <div class="hero-actions">
-          <a class="button primary" href="#projects">View projects</a>
-          <a class="button secondary" href="https://steamcommunity.com/id/Shopss" target="_blank" rel="noreferrer">Steam</a>
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn secondary" href="https://github.com/OP2U" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
       </div>
 
-      <div class="hero-mark" aria-hidden="true">
-        <img src="assets/shopss-logo.png" alt="">
+      <div class="hero-panel">
+        <div class="panel-top">
+          <span>LIVE SYSTEMS</span>
+          <span class="panel-count">03</span>
+        </div>
+
+        <div class="system-row">
+          <div>
+            <strong>CS2 Match Tracker</strong>
+            <span>Discord automation</span>
+          </div>
+          <span class="status live">LIVE</span>
+        </div>
+
+        <div class="system-row">
+          <div>
+            <strong>Discord Presence</strong>
+            <span>Windows companion</span>
+          </div>
+          <span class="status active">ACTIVE</span>
+        </div>
+
+        <div class="system-row">
+          <div>
+            <strong>SHOPSS Site</strong>
+            <span>Auto-deployed</span>
+          </div>
+          <span class="status live">LIVE</span>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="section-heading">
+    <section class="section reveal" id="projects">
+      <div class="section-head">
         <div>
           <p class="kicker">SELECTED WORK</p>
           <h2>Projects</h2>
         </div>
-        <span class="section-count">02</span>
+        <span class="section-note">Built to stay useful.</span>
       </div>
 
       <div class="projects-grid">
-        <article class="project-card featured">
-          <div class="project-topline">
-            <span class="project-number">01</span>
-            <span class="project-status live"><i></i> LIVE</span>
+        <a class="project-card featured" href="projects/cs2-match-tracker.html">
+          <div class="project-meta">
+            <span>01</span>
+            <span class="status live">LIVE</span>
           </div>
-          <div class="project-body">
+
+          <div class="project-main">
             <h3>CS2 Match Tracker</h3>
             <p>
-              A Discord bot that automatically tracks Valve CS2 matches and posts
-              polished team reports, achievements, Steam links, and Premier rating data.
+              A multi-server Discord bot that automatically turns Valve CS2 match data
+              into polished team reports.
             </p>
           </div>
-          <div class="tags" aria-label="Technologies">
-            <span>Python</span>
-            <span>Discord</span>
-            <span>Leetify API</span>
-            <span>DigitalOcean</span>
-          </div>
-        </article>
 
-        <article class="project-card">
-          <div class="project-topline">
-            <span class="project-number">02</span>
-            <span class="project-status active"><i></i> ACTIVE</span>
+          <div class="project-footer">
+            <div class="tags">
+              <span>Python</span>
+              <span>Discord</span>
+              <span>SQLite</span>
+              <span>DigitalOcean</span>
+            </div>
+            <span class="open-arrow">↗</span>
           </div>
-          <div class="project-body">
+        </a>
+
+        <a class="project-card" href="projects/discord-presence.html">
+          <div class="project-meta">
+            <span>02</span>
+            <span class="status active">ACTIVE</span>
+          </div>
+
+          <div class="project-main">
             <h3>Discord Rich Presence</h3>
             <p>
-              A lightweight Windows companion that keeps a custom Discord activity
-              running automatically with a persistent tray app and startup support.
+              A lightweight Windows tray app that keeps a custom Discord activity running
+              and reconnects automatically.
             </p>
           </div>
-          <div class="tags" aria-label="Technologies">
-            <span>Python</span>
-            <span>Windows</span>
-            <span>Discord RPC</span>
+
+          <div class="project-footer">
+            <div class="tags">
+              <span>Python</span>
+              <span>Windows</span>
+              <span>Discord RPC</span>
+            </div>
+            <span class="open-arrow">↗</span>
           </div>
-        </article>
+        </a>
+
+        <a class="project-card" href="https://github.com/OP2U/shopss-site" target="_blank" rel="noreferrer">
+          <div class="project-meta">
+            <span>03</span>
+            <span class="status live">LIVE</span>
+          </div>
+
+          <div class="project-main">
+            <h3>SHOPSS Site</h3>
+            <p>
+              This site: hosted on a VPS, served by Nginx, and automatically updated from GitHub.
+            </p>
+          </div>
+
+          <div class="project-footer">
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Nginx</span>
+              <span>Git</span>
+            </div>
+            <span class="open-arrow">↗</span>
+          </div>
+        </a>
       </div>
     </section>
 
-    <section class="section links-section" id="links">
-      <div class="section-heading">
+    <section class="section reveal" id="stack">
+      <div class="section-head">
         <div>
-          <p class="kicker">AROUND THE WEB</p>
-          <h2>Links</h2>
+          <p class="kicker">CURRENT STACK</p>
+          <h2>What runs it</h2>
+        </div>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-item">
+          <span>01</span>
+          <strong>DigitalOcean</strong>
+          <small>VPS hosting</small>
+        </div>
+        <div class="stack-item">
+          <span>02</span>
+          <strong>Nginx</strong>
+          <small>Web server</small>
+        </div>
+        <div class="stack-item">
+          <span>03</span>
+          <strong>GitHub</strong>
+          <small>Source + deploy flow</small>
+        </div>
+        <div class="stack-item">
+          <span>04</span>
+          <strong>Python</strong>
+          <small>Bots + desktop tools</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section links-section reveal" id="links">
+      <div class="section-head">
+        <div>
+          <p class="kicker">LINKS</p>
+          <h2>Find me</h2>
         </div>
       </div>
 
       <div class="link-list">
         <a href="https://steamcommunity.com/id/Shopss" target="_blank" rel="noreferrer">
           <span>Steam</span>
-          <span class="arrow">↗</span>
+          <span>↗</span>
         </a>
-
-        <!-- Replace https://github.com/OP2U with your real GitHub profile URL. -->
         <a href="https://github.com/OP2U" target="_blank" rel="noreferrer">
           <span>GitHub</span>
-          <span class="arrow">↗</span>
+          <span>↗</span>
         </a>
       </div>
     </section>
@@ -125,5 +223,15 @@
     <span>SHOPSS</span>
     <span>Built on DigitalOcean • Auto-deployed from GitHub</span>
   </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      }
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
 </body>
 </html>
