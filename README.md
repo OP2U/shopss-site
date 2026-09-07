@@ -37,3 +37,9 @@ The VPS deployment timer will pull the new `main` commit automatically.
 ## v2.3
 
 - Added Cloudflare Web Analytics to the homepage and both project pages.
+
+## v2.4
+
+- Added a Download button to the Discord Rich Presence project page.
+- Added a direct GitHub source button.
+- Updated the Rich Presence feature text to point to shopss.me.

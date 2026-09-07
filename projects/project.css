@@ -1,4 +1,4 @@
-@import url('../styles.css?v=2.2');
+@import url('../styles.css?v=2.4');
 
 .project-page {
   padding: 72px 0 96px;
@@ -94,4 +94,16 @@
   .project-detail-grid {
     grid-template-columns: 1fr;
   }
+}
+
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin-top: 28px;
+}
+
+.project-actions .btn {
+  min-width: 118px;
 }
