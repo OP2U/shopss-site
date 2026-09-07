@@ -43,3 +43,8 @@ The VPS deployment timer will pull the new `main` commit automatically.
 - Added a Download button to the Discord Rich Presence project page.
 - Added a direct GitHub source button.
 - Updated the Rich Presence feature text to point to shopss.me.
+
+## v2.5
+
+- Added an independent-project / Discord non-affiliation disclaimer.
+- Added third-party dependency attribution information to the Rich Presence page.
