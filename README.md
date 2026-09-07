@@ -15,3 +15,9 @@ Personal site for https://shopss.me.
 The production site is automatically deployed from the `main` branch of:
 
 https://github.com/OP2U/shopss-site
+
+
+## v2.7
+
+- Replaced the SHOPSS Desktop project preview with the latest ultrawide screenshot.
+- Removed the Steam link from the homepage.
