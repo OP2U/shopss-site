@@ -17,7 +17,14 @@ The production site is automatically deployed from the `main` branch of:
 https://github.com/OP2U/shopss-site
 
 
-## v2.7
+## v2.8
 
 - Replaced the SHOPSS Desktop project preview with the latest ultrawide screenshot.
 - Removed the Steam link from the homepage.
+
+
+## v2.8
+
+- Redesigned the **What runs it** section into a layered infrastructure overview.
+- Added DigitalOcean/Ubuntu, Nginx/Let's Encrypt, GitHub/systemd, C#/WPF/.NET 10, Python/Discord, SQLite/monitoring, Cloudflare analytics, and Inno Setup references.
+- Added an infrastructure flow diagram and richer responsive stack cards.

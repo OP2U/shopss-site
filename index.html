@@ -7,7 +7,7 @@
   <meta name="description" content="SHOPSS — projects, systems, and things I build.">
   <title>SHOPSS</title>
   <link rel="icon" href="assets/shopss-logo.png">
-  <link rel="stylesheet" href="styles.css?v=2.6">
+  <link rel="stylesheet" href="styles.css?v=2.8">
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -197,40 +197,136 @@
       </div>
     </section>
 
-    <section class="section reveal" id="stack">
-      <div class="section-head">
+    <section class="section reveal stack-section" id="stack">
+      <div class="section-head stack-head">
         <div>
-          <p class="kicker">CURRENT STACK</p>
+          <p class="kicker">INFRASTRUCTURE</p>
           <h2>What runs it</h2>
+        </div>
+        <span class="section-note">From VPS to desktop.</span>
+      </div>
+
+      <div class="stack-overview">
+        <div class="stack-overview-copy">
+          <span class="stack-live"><i></i> SHOPSS SYSTEM</span>
+          <h3>One setup, multiple layers.</h3>
+          <p>
+            The site, bots, monitoring, desktop app, and deployment flow all connect through
+            a small stack built to stay lightweight and easy to maintain.
+          </p>
+        </div>
+
+        <div class="stack-route" aria-label="SHOPSS infrastructure flow">
+          <div class="route-node">
+            <span>01</span>
+            <strong>GitHub</strong>
+            <small>Source</small>
+          </div>
+          <div class="route-line"><b></b></div>
+          <div class="route-node">
+            <span>02</span>
+            <strong>VPS</strong>
+            <small>Compute</small>
+          </div>
+          <div class="route-line"><b></b></div>
+          <div class="route-node">
+            <span>03</span>
+            <strong>Nginx</strong>
+            <small>Serve</small>
+          </div>
+          <div class="route-line"><b></b></div>
+          <div class="route-node active">
+            <span>04</span>
+            <strong>SHOPSS</strong>
+            <small>Live</small>
+          </div>
         </div>
       </div>
 
-      <div class="stack-grid">
-        <div class="stack-item">
-          <span>01</span>
-          <strong>DigitalOcean</strong>
-          <small>VPS hosting</small>
-        </div>
-        <div class="stack-item">
-          <span>02</span>
-          <strong>Nginx</strong>
-          <small>Web server</small>
-        </div>
-        <div class="stack-item">
-          <span>03</span>
-          <strong>GitHub</strong>
-          <small>Source + deploy flow</small>
-        </div>
-        <div class="stack-item">
-          <span>04</span>
-          <strong>.NET</strong>
-          <small>Windows desktop apps</small>
-        </div>
-        <div class="stack-item">
-          <span>05</span>
-          <strong>Python</strong>
-          <small>Bots + automation</small>
-        </div>
+      <div class="stack-system-grid">
+        <article class="stack-card accent-purple">
+          <div class="stack-card-top">
+            <span class="stack-code">CLOUD</span>
+            <span class="stack-state">LIVE</span>
+          </div>
+          <h3>DigitalOcean + Ubuntu</h3>
+          <p>The VPS layer hosting the site, Discord automation, and server-status collector.</p>
+          <div class="stack-tags">
+            <span>Ubuntu 24.04</span>
+            <span>VPS</span>
+            <span>SSH</span>
+          </div>
+        </article>
+
+        <article class="stack-card accent-blue">
+          <div class="stack-card-top">
+            <span class="stack-code">WEB</span>
+            <span class="stack-state">HTTPS</span>
+          </div>
+          <h3>Nginx + Let's Encrypt</h3>
+          <p>Static site delivery, HTTPS, redirects, and the optional public status endpoint.</p>
+          <div class="stack-tags">
+            <span>Nginx</span>
+            <span>Certbot</span>
+            <span>HTML/CSS</span>
+          </div>
+        </article>
+
+        <article class="stack-card accent-green">
+          <div class="stack-card-top">
+            <span class="stack-code">DEPLOY</span>
+            <span class="stack-state">AUTO</span>
+          </div>
+          <h3>GitHub + systemd</h3>
+          <p>Source control plus lightweight services and timers that keep deployments and monitoring running.</p>
+          <div class="stack-tags">
+            <span>Git</span>
+            <span>systemd</span>
+            <span>Auto-deploy</span>
+          </div>
+        </article>
+
+        <article class="stack-card accent-violet">
+          <div class="stack-card-top">
+            <span class="stack-code">DESKTOP</span>
+            <span class="stack-state">v1.0</span>
+          </div>
+          <h3>C# + WPF + .NET 10</h3>
+          <p>Native Windows widgets, desktop organizer zones, tray controls, and the public installer build.</p>
+          <div class="stack-tags">
+            <span>C#</span>
+            <span>WPF</span>
+            <span>Inno Setup</span>
+          </div>
+        </article>
+
+        <article class="stack-card accent-orange">
+          <div class="stack-card-top">
+            <span class="stack-code">AUTOMATION</span>
+            <span class="stack-state">RUNNING</span>
+          </div>
+          <h3>Python + Discord</h3>
+          <p>The automation layer behind match tracking, Discord integrations, and lightweight utility scripts.</p>
+          <div class="stack-tags">
+            <span>Python</span>
+            <span>Discord API</span>
+            <span>RPC</span>
+          </div>
+        </article>
+
+        <article class="stack-card accent-cyan">
+          <div class="stack-card-top">
+            <span class="stack-code">DATA</span>
+            <span class="stack-state">LOCAL</span>
+          </div>
+          <h3>SQLite + Monitoring</h3>
+          <p>Small persistent data stores, server telemetry, and privacy-friendly site analytics.</p>
+          <div class="stack-tags">
+            <span>SQLite</span>
+            <span>JSON</span>
+            <span>Cloudflare</span>
+          </div>
+        </article>
       </div>
     </section>
 
