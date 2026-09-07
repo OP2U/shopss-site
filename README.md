@@ -1,50 +1,17 @@
-# SHOPSS Site
+# SHOPSS Site v2.6
 
-Personal project site for SHOPSS.
+Personal site for https://shopss.me.
 
-## Live stack
+## v2.6
 
-- Static HTML/CSS/JS
-- Nginx
-- DigitalOcean VPS
-- GitHub source control
-- Automatic VPS updates from `main`
+- Added SHOPSS Desktop as the featured project.
+- Added a dedicated SHOPSS Desktop project page.
+- Added direct v1.0.0 installer download links.
+- Added a desktop preview screenshot.
+- Updated the live systems panel to four systems.
+- Added .NET to the current stack.
+- Preserved Cloudflare Web Analytics.
 
-## Projects
+The production site is automatically deployed from the `main` branch of:
 
-- CS2 Match Tracker
-- Discord Rich Presence
-- SHOPSS Site
-
-## Local updates
-
-Edit the files, then:
-
-```bash
-git add .
-git commit -m "Describe the change"
-git push
-```
-
-The VPS deployment timer will pull the new `main` commit automatically.
-
-## v2.2
-
-- Added real project screenshots to the CS2 Match Tracker and Discord Rich Presence pages.
-- Added screenshot styling and cache-busting for updated CSS.
-
-
-## v2.3
-
-- Added Cloudflare Web Analytics to the homepage and both project pages.
-
-## v2.4
-
-- Added a Download button to the Discord Rich Presence project page.
-- Added a direct GitHub source button.
-- Updated the Rich Presence feature text to point to shopss.me.
-
-## v2.5
-
-- Added an independent-project / Discord non-affiliation disclaimer.
-- Added third-party dependency attribution information to the Rich Presence page.
+https://github.com/OP2U/shopss-site

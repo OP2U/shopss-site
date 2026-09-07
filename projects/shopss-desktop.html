@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3C205B">
+  <meta name="description" content="SHOPSS Desktop — lightweight Windows widgets, desktop organizer, and optional server monitoring.">
+  <title>SHOPSS Desktop — SHOPSS</title>
+  <link rel="icon" href="../assets/shopss-logo.png">
+  <link rel="stylesheet" href="project.css?v=2.6">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html">
+      <img src="../assets/shopss-logo.png" alt="">
+      <span>SHOPSS</span>
+    </a>
+    <nav>
+      <a href="../index.html#projects">Projects</a>
+      <a href="https://github.com/OP2U/shopss-desktop" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <a class="project-back" href="../index.html#projects">← Back to projects</a>
+
+    <section class="project-hero">
+      <span class="status active">ACTIVE</span>
+      <h1>SHOPSS Desktop</h1>
+      <p class="project-lead">
+        A lightweight Windows desktop companion built around a clean SHOPSS visual system:
+        live widgets, customizable desktop organizer zones, tray controls, and optional
+        self-hosted server monitoring.
+      </p>
+
+      <div class="project-actions">
+        <a class="btn primary"
+           href="https://github.com/OP2U/shopss-desktop/releases/download/v1.0.0/SHOPSS-Desktop-Setup-v1.0.0.exe">
+          Download v1.0.0
+        </a>
+        <a class="btn secondary"
+           href="https://github.com/OP2U/shopss-desktop"
+           target="_blank"
+           rel="noreferrer">
+          View GitHub ↗
+        </a>
+      </div>
+      <p class="download-note">Windows 10/11 x64 • Installer release • MIT licensed</p>
+
+      <section class="project-media wide">
+        <h2>Desktop preview</h2>
+        <p class="lead-note">The personal setup uses organizer zones on the left and lightweight live widgets on the right.</p>
+        <div class="preview-card">
+          <img src="../assets/projects/shopss-desktop.webp" alt="SHOPSS Desktop organizer zones and widgets on a Windows desktop">
+          <small>Organizer zones, clock widget, and live server widget running together on an ultrawide desktop.</small>
+        </div>
+      </section>
+    </section>
+
+    <section class="project-detail-grid">
+      <article class="detail-card">
+        <h2>Desktop Organizer</h2>
+        <ul>
+          <li>SCHOOL, PROJECTS, MISC, and custom zones.</li>
+          <li>Drag-and-drop files and folders into real backing folders.</li>
+          <li>Resizable zones with saved positions and sizes.</li>
+          <li>Optional automatic sorting rules per zone.</li>
+          <li>Hidden scrollbars with normal mouse-wheel scrolling.</li>
+        </ul>
+      </article>
+
+      <article class="detail-card">
+        <h2>Widgets</h2>
+        <ul>
+          <li>Clock and date.</li>
+          <li>Optional server health and resource monitoring.</li>
+          <li>Layout locking and click-through behavior.</li>
+          <li>Desktop-only mode and opacity controls.</li>
+        </ul>
+      </article>
+
+      <article class="detail-card">
+        <h2>Stack</h2>
+        <div class="tags">
+          <span>C#</span>
+          <span>WPF</span>
+          <span>.NET 10</span>
+          <span>Windows</span>
+          <span>Inno Setup</span>
+        </div>
+      </article>
+
+      <article class="detail-card">
+        <h2>Lightweight by design</h2>
+        <p>
+          The desktop organizer reacts to filesystem events instead of repeatedly scanning
+          the Desktop. Server monitoring is optional, and the clock/server refresh intervals
+          are intentionally low-frequency.
+        </p>
+      </article>
+
+      <article class="detail-card">
+        <h2>Optional server monitoring</h2>
+        <p>
+          The public build ships with no personal server endpoint configured. Users can
+          connect their own compatible JSON status endpoint from the tray menu, or simply
+          leave the server widgets disabled.
+        </p>
+      </article>
+
+      <article class="detail-card">
+        <h2>Release</h2>
+        <p>
+          v1.0.0 is the first public baseline release, packaged as a Windows installer with
+          source available on GitHub.
+        </p>
+      </article>
+    </section>
+
+    <section class="legal-note" aria-labelledby="legal-title">
+      <div class="section-kicker">PROJECT INFO</div>
+      <h2 id="legal-title">Open-source Windows utility</h2>
+      <p>
+        SHOPSS Desktop is released under the MIT License. The project uses Microsoft .NET/WPF,
+        while Inno Setup is used to build the Windows installer.
+      </p>
+      <p class="legal-small">
+        The installer is currently unsigned, so Windows SmartScreen may show an unknown-publisher
+        warning on some systems. Source code and release files are available through GitHub.
+      </p>
+    </section>
+  </main>
+
+  <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "be7c877c55914dae92224637ea826878"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

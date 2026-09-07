@@ -1,4 +1,4 @@
-@import url('../styles.css?v=2.5');
+@import url('../styles.css?v=2.6');
 
 .project-page {
   padding: 72px 0 96px;
@@ -131,4 +131,15 @@
 .legal-note .legal-small {
   margin-top: 10px;
   font-size: 0.92rem;
+}
+
+
+.download-note {
+  margin-top: 14px;
+  color: var(--muted-2);
+  font-size: .78rem;
+}
+
+.project-media.wide .preview-card {
+  max-width: none;
 }
