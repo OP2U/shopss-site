@@ -42,7 +42,7 @@
 
         <div class="sentinel-actions">
           <a class="btn primary" href="#capabilities">View capabilities</a>
-          <a class="btn secondary" href="https://github.com/OP2U" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+          <a class="btn secondary" href="https://github.com/OP2U/shopss-sentinel" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
       </div>
 
@@ -78,20 +78,25 @@
     <div class="sentinel-stats">
       <div class="sentinel-stat">
         <strong id="stat-events">—</strong>
-        <span>Security events / 24h</span>
+        <span>SSH attempts / 24h</span>
       </div>
       <div class="sentinel-stat">
         <strong id="stat-sources">—</strong>
-        <span>SSH sources / 24h</span>
+        <span>Unique SSH sources / 24h</span>
       </div>
       <div class="sentinel-stat">
         <strong id="stat-alerts">—</strong>
-        <span>Brute-force alerts / 24h</span>
+        <span>Brute-force sources / 24h</span>
       </div>
       <div class="sentinel-stat">
         <strong id="stat-blocks">—</strong>
-        <span>SSH threats blocked / 24h</span>
+        <span>Sources blocked / 24h</span>
       </div>
+    </div>
+
+    <div class="sentinel-privacy">
+      These counters represent observed and blocked Internet-facing SSH activity. Failed attempts
+      and scanner traffic do not indicate a successful compromise.
     </div>
 
     <section class="sentinel-section" id="capabilities">
@@ -214,10 +219,10 @@
         setState(byId("sentinel-integrity"), data.integrity);
         setState(byId("sentinel-response"), data.response_mode);
 
-        byId("stat-events").textContent = data.security_events_24h ?? "—";
+        byId("stat-events").textContent = data.ssh_attempts_24h ?? data.ssh_failures_24h ?? "—";
         byId("stat-sources").textContent = data.ssh_sources_24h ?? "—";
-        byId("stat-alerts").textContent = data.ssh_bruteforce_alerts_24h ?? "—";
-        byId("stat-blocks").textContent = data.ssh_blocks_24h ?? "—";
+        byId("stat-alerts").textContent = data.ssh_bruteforce_sources_24h ?? data.ssh_bruteforce_alerts_24h ?? "—";
+        byId("stat-blocks").textContent = data.ssh_blocked_sources_24h ?? data.ssh_blocks_24h ?? "—";
 
         if (data.generated_at) {
           const generated = new Date(data.generated_at);
@@ -239,4 +244,3 @@
   </script>
 </body>
 </html>
-
