@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3C205B">
+  <meta name="description" content="SHOPSS Sentinel — lightweight Linux security monitoring, detection, and automated SSH response.">
+  <title>SHOPSS Sentinel — SHOPSS</title>
+  <link rel="icon" href="../assets/shopss-logo.png">
+  <link rel="stylesheet" href="../styles.css?v=2.9">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="glow glow-one" aria-hidden="true"></div>
+  <div class="glow glow-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="../index.html">
+      <img src="../assets/shopss-logo.png" alt="">
+      <span>SHOPSS</span>
+    </a>
+
+    <nav>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#stack">Stack</a>
+      <a href="https://github.com/OP2U" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <a class="project-back" href="../index.html#projects">← Back to projects</a>
+
+    <section class="sentinel-hero">
+      <div class="sentinel-title">
+        <p class="kicker">INFRASTRUCTURE SECURITY</p>
+        <h1>SHOPSS<br>Sentinel</h1>
+        <p>
+          A lightweight Linux security monitor built for the SHOPSS VPS. Sentinel analyzes
+          authentication and web activity, checks host integrity, correlates repeated attacks,
+          and can temporarily block confirmed SSH brute-force sources.
+        </p>
+
+        <div class="sentinel-actions">
+          <a class="btn primary" href="#capabilities">View capabilities</a>
+          <a class="btn secondary" href="https://github.com/OP2U" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+        </div>
+      </div>
+
+      <div class="sentinel-live-panel" aria-live="polite">
+        <div class="sentinel-live-head">
+          <strong>LIVE SANITIZED TELEMETRY</strong>
+          <span class="sentinel-live-state unavailable" id="sentinel-live-state">CONNECTING</span>
+        </div>
+
+        <div class="sentinel-health-grid">
+          <div class="sentinel-health-item">
+            <span>HOST HEALTH</span>
+            <strong id="sentinel-host">—</strong>
+          </div>
+          <div class="sentinel-health-item">
+            <span>THREAT ACTIVITY</span>
+            <strong id="sentinel-threat">—</strong>
+          </div>
+          <div class="sentinel-health-item">
+            <span>FILE INTEGRITY</span>
+            <strong id="sentinel-integrity">—</strong>
+          </div>
+          <div class="sentinel-health-item">
+            <span>RESPONSE ENGINE</span>
+            <strong id="sentinel-response">—</strong>
+          </div>
+        </div>
+
+        <div class="sentinel-updated" id="sentinel-updated">Waiting for Sentinel data.</div>
+      </div>
+    </section>
+
+    <div class="sentinel-stats">
+      <div class="sentinel-stat">
+        <strong id="stat-events">—</strong>
+        <span>Security events / 24h</span>
+      </div>
+      <div class="sentinel-stat">
+        <strong id="stat-sources">—</strong>
+        <span>SSH sources / 24h</span>
+      </div>
+      <div class="sentinel-stat">
+        <strong id="stat-alerts">—</strong>
+        <span>Brute-force alerts / 24h</span>
+      </div>
+      <div class="sentinel-stat">
+        <strong id="stat-blocks">—</strong>
+        <span>SSH threats blocked / 24h</span>
+      </div>
+    </div>
+
+    <section class="sentinel-section" id="capabilities">
+      <p class="kicker">DEFENSIVE WORKFLOW</p>
+      <h2>What it does</h2>
+
+      <div class="sentinel-feature-grid">
+        <article class="sentinel-feature">
+          <small>01 / DETECT</small>
+          <h3>Authentication monitoring</h3>
+          <p>Reads new SSH authentication failures from the systemd journal and records private source and username metadata for investigation.</p>
+        </article>
+
+        <article class="sentinel-feature">
+          <small>02 / CORRELATE</small>
+          <h3>Brute-force detection</h3>
+          <p>Groups repeated failures by source and time window, raises HIGH severity incidents, and uses cooldowns to avoid duplicate alert spam.</p>
+        </article>
+
+        <article class="sentinel-feature">
+          <small>03 / RESPOND</small>
+          <h3>Temporary SSH blocking</h3>
+          <p>Uses a dedicated nftables table to apply time-limited TCP/22 blocks after safety checks, without affecting the public website.</p>
+        </article>
+
+        <article class="sentinel-feature">
+          <small>04 / VERIFY</small>
+          <h3>File integrity</h3>
+          <p>Maintains trusted SHA-256 baselines for protected configuration files and reports unexpected changes without automatically trusting them.</p>
+        </article>
+
+        <article class="sentinel-feature">
+          <small>05 / BASELINE</small>
+          <h3>Services and ports</h3>
+          <p>Checks expected systemd services and externally bound TCP ports so unexpected host-state changes can be surfaced quickly.</p>
+        </article>
+
+        <article class="sentinel-feature">
+          <small>06 / ALERT</small>
+          <h3>Discord notifications</h3>
+          <p>Sends private notifications for correlated HIGH events and automated blocks while keeping credentials and detailed attack data off the website.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="sentinel-section">
+      <p class="kicker">DATA BOUNDARY</p>
+      <h2>Private by design</h2>
+
+      <div class="sentinel-architecture">
+        <div class="sentinel-arch-node">
+          <span>PRIVATE</span>
+          <strong>Security events</strong>
+          <small>Source IPs, attempted usernames, detailed event history, firewall actions.</small>
+        </div>
+
+        <div class="sentinel-arch-arrow">→</div>
+
+        <div class="sentinel-arch-node">
+          <span>SANITIZE</span>
+          <strong>Sentinel export</strong>
+          <small>Aggregate health and 24-hour counters only.</small>
+        </div>
+
+        <div class="sentinel-arch-arrow">→</div>
+
+        <div class="sentinel-arch-node">
+          <span>PUBLIC</span>
+          <strong>shopss.me</strong>
+          <small>Portfolio-safe telemetry with no source identities or raw logs.</small>
+        </div>
+      </div>
+
+      <div class="sentinel-privacy">
+        The live panel intentionally excludes attacker IP addresses, attempted usernames, raw SSH/Nginx logs,
+        internal file paths, Discord webhook information, credentials, and firewall rules.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>SHOPSS Sentinel</span>
+    <span>Linux • Python • SQLite • nftables • systemd</span>
+  </footer>
+
+  <script>
+    const byId = (id) => document.getElementById(id);
+
+    function setState(el, value) {
+      const text = String(value || "unknown").toUpperCase();
+      el.textContent = text;
+      el.classList.remove("good", "elevated", "quiet");
+
+      if (["HEALTHY", "OK", "ENABLED", "SECURE"].includes(text)) {
+        el.classList.add("good");
+      } else if (text === "ELEVATED") {
+        el.classList.add("elevated");
+      } else if (["QUIET", "ACTIVE"].includes(text)) {
+        el.classList.add("quiet");
+      }
+    }
+
+    async function loadSentinel() {
+      const live = byId("sentinel-live-state");
+
+      try {
+        const response = await fetch("../data/sentinel-summary.json?t=" + Date.now(), {
+          cache: "no-store"
+        });
+
+        if (!response.ok) throw new Error("summary unavailable");
+
+        const data = await response.json();
+
+        live.textContent = "LIVE";
+        live.classList.remove("unavailable");
+
+        setState(byId("sentinel-host"), data.host_health || data.status);
+        setState(byId("sentinel-threat"), data.threat_activity);
+        setState(byId("sentinel-integrity"), data.integrity);
+        setState(byId("sentinel-response"), data.response_mode);
+
+        byId("stat-events").textContent = data.security_events_24h ?? "—";
+        byId("stat-sources").textContent = data.ssh_sources_24h ?? "—";
+        byId("stat-alerts").textContent = data.ssh_bruteforce_alerts_24h ?? "—";
+        byId("stat-blocks").textContent = data.ssh_blocks_24h ?? "—";
+
+        if (data.generated_at) {
+          const generated = new Date(data.generated_at);
+          byId("sentinel-updated").textContent =
+            "Updated " + generated.toLocaleString() + " • Sanitized public telemetry";
+        } else {
+          byId("sentinel-updated").textContent = "Sanitized public telemetry";
+        }
+      } catch (error) {
+        live.textContent = "DATA UNAVAILABLE";
+        live.classList.add("unavailable");
+        byId("sentinel-updated").textContent =
+          "Live telemetry is temporarily unavailable. Sentinel may still be running privately.";
+      }
+    }
+
+    loadSentinel();
+    setInterval(loadSentinel, 60000);
+  </script>
+</body>
+</html>
