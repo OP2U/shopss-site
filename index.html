@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#3C205B">
-  <meta name="description" content="SHOPSS — projects, systems, and things I build.">
+  <meta name="description" content="SHOPSS — projects, systems, hosted tools, and SHOPSS Idle.">
   <title>SHOPSS</title>
   <link rel="icon" href="assets/shopss-logo.png">
   <link rel="stylesheet" href="styles.css?v=2.9">
@@ -41,7 +41,12 @@
         </p>
 
         <div class="hero-actions">
+          <a class="btn idle-launch" href="/idle/">
+            Play SHOPSS Idle
+            <span>ALPHA</span>
+          </a>
           <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn secondary" href="https://github.com/OP2U/shopss-desktop/releases/download/v1.0.0/SHOPSS-Desktop-Setup-v1.0.0.exe">Download Desktop</a>
           <a class="btn secondary" href="https://github.com/OP2U" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
       </div>
@@ -60,13 +65,13 @@
           <span class="status active">ACTIVE</span>
         </div>
 
-        <div class="system-row">
+        <a class="system-row system-link" href="/idle/">
           <div>
-            <strong>SHOPSS Sentinel</strong>
-            <span>Infrastructure security</span>
+            <strong>SHOPSS Idle</strong>
+            <span>Hosted browser RPG</span>
           </div>
-          <span class="status live">LIVE</span>
-        </div>
+          <span class="status alpha">ALPHA</span>
+        </a>
 
         <div class="system-row">
           <div>
@@ -129,28 +134,29 @@
           </div>
         </a>
 
-        <a class="project-card sentinel-card" href="projects/shopss-sentinel.html">
+        <a class="project-card idle-card" href="/idle/">
           <div class="project-meta">
             <span>02</span>
-            <span class="status live">LIVE</span>
+            <span class="status alpha">ALPHA</span>
           </div>
 
           <div class="project-main">
-            <h3>SHOPSS Sentinel</h3>
+            <div class="idle-project-kicker">HOSTED · DISCORD CLOUD SAVES</div>
+            <h3>SHOPSS Idle</h3>
             <p>
-              A lightweight Linux security monitor that detects SSH attacks, correlates
-              brute-force behavior, checks host integrity, and applies temporary defensive blocks.
+              A browser-based idle RPG with active combat, classes, companions, Forge upgrades,
+              six regions, a 100-tier free Adventure Pass, and persistent Discord-linked accounts.
             </p>
           </div>
 
           <div class="project-footer">
             <div class="tags">
-              <span>Python</span>
-              <span>Linux</span>
-              <span>nftables</span>
+              <span>Node.js</span>
               <span>SQLite</span>
+              <span>Discord OAuth</span>
+              <span>Game</span>
             </div>
-            <span class="open-arrow">↗</span>
+            <span class="idle-play-label">PLAY ALPHA&nbsp; ↗</span>
           </div>
         </a>
 
@@ -243,8 +249,8 @@
           <span class="stack-live"><i></i> SHOPSS SYSTEM</span>
           <h3>One setup, multiple layers.</h3>
           <p>
-            The site, bots, monitoring, desktop app, and deployment flow all connect through
-            a small stack built to stay lightweight and easy to maintain.
+            The site, hosted game, bots, monitoring, desktop app, and deployment flow all connect
+            through a small stack built to stay lightweight and easy to maintain.
           </p>
         </div>
 
@@ -282,7 +288,7 @@
             <span class="stack-state">LIVE</span>
           </div>
           <h3>DigitalOcean + Ubuntu</h3>
-          <p>The VPS layer hosting the site, Discord automation, and server-status collector.</p>
+          <p>The VPS layer hosting the site, SHOPSS Idle, Discord automation, and server-status collector.</p>
           <div class="stack-tags">
             <span>Ubuntu 24.04</span>
             <span>VPS</span>
@@ -315,6 +321,20 @@
             <span>Git</span>
             <span>systemd</span>
             <span>Auto-deploy</span>
+          </div>
+        </article>
+
+        <article class="stack-card accent-teal">
+          <div class="stack-card-top">
+            <span class="stack-code">GAME</span>
+            <span class="stack-state">ALPHA</span>
+          </div>
+          <h3>Node.js + Discord OAuth</h3>
+          <p>SHOPSS Idle runs as a private Node service behind Nginx with Discord-linked accounts and persistent server saves.</p>
+          <div class="stack-tags">
+            <span>Node.js 24</span>
+            <span>Discord OAuth</span>
+            <span>SQLite</span>
           </div>
         </article>
 
@@ -352,10 +372,10 @@
             <span class="stack-state">LOCAL</span>
           </div>
           <h3>SQLite + Monitoring</h3>
-          <p>Small persistent data stores, Sentinel security telemetry, server monitoring, and privacy-friendly site analytics.</p>
+          <p>Persistent game saves, server telemetry, monitoring data, and privacy-friendly site analytics.</p>
           <div class="stack-tags">
             <span>SQLite</span>
-            <span>Sentinel</span>
+            <span>JSON</span>
             <span>Cloudflare</span>
           </div>
         </article>
@@ -396,4 +416,3 @@
   <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "be7c877c55914dae92224637ea826878"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
-
