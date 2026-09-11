@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "0.14.7",
-    "downloadUrl":  "https://shopss.me/browser/updates/SHOPSS-Browser-v0.14.7-update.zip",
-    "sha256":  "40C8509D3ADBF08443491FD747E316A2DEC1627D59ACEC7D095D3227810A9945",
-    "releaseNotes":  "Daily-driver polish: horizontal tabs now shrink with the window instead of running off-screen, compact tabs progressively simplify title/close controls, folder chips share the responsive width budget, and the stricter D2L / Brightspace due-date detection from v0.14.6 remains included.",
-    "publishedUtc":  "2026-09-11T20:50:46.4092283Z"
+    "version":  "0.14.9",
+    "downloadUrl":  "https://shopss.me/browser/updates/SHOPSS-Browser-v0.14.9-update.zip",
+    "sha256":  "759FE85C26F8CC80E6089386A66D0E9E63B1016F66F22B02F65172E0CC0E28BF",
+    "releaseNotes":  "Publisher hotfix: v0.14.9 fixes a Windows PowerShell variable collision in the one-click publisher by avoiding the built-in read-only $HOME variable. Browser behavior remains based on v0.14.7 while the D2L due-date detector is scheduled for a separate accuracy pass.",
+    "publishedUtc":  "2026-09-11T21:01:58.5732574Z"
 }
