@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "0.14.9",
-    "downloadUrl":  "https://shopss.me/browser/updates/SHOPSS-Browser-v0.14.9-update.zip",
-    "sha256":  "759FE85C26F8CC80E6089386A66D0E9E63B1016F66F22B02F65172E0CC0E28BF",
-    "releaseNotes":  "Publisher hotfix: v0.14.9 fixes a Windows PowerShell variable collision in the one-click publisher by avoiding the built-in read-only $HOME variable. Browser behavior remains based on v0.14.7 while the D2L due-date detector is scheduled for a separate accuracy pass.",
-    "publishedUtc":  "2026-09-11T21:01:58.5732574Z"
+    "version":  "0.15.0",
+    "downloadUrl":  "https://shopss.me/browser/updates/SHOPSS-Browser-v0.15.0-update.zip",
+    "sha256":  "ED72D83B13F2E69B62B61419AF90753C6E1C5E422802482B3027C01EFBCEA330",
+    "releaseNotes":  "v0.15.0 accuracy and polish release: college reminders now read authoritative Brightspace scheduled-item API due dates instead of scraping nearby page text, previous DOM-detected reminders are cleared and re-synced, main/tool-window opening and minimize/restore motion now animate the top-level window so WebView2 is included, and SHOPSS Browser has a new clean purple S application icon.",
+    "publishedUtc":  "2026-09-11T21:20:31.6339757Z"
 }
