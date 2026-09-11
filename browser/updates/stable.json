@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "0.15.0",
-    "downloadUrl":  "https://shopss.me/browser/updates/SHOPSS-Browser-v0.15.0-update.zip",
-    "sha256":  "ED72D83B13F2E69B62B61419AF90753C6E1C5E422802482B3027C01EFBCEA330",
-    "releaseNotes":  "v0.15.0 accuracy and polish release: college reminders now read authoritative Brightspace scheduled-item API due dates instead of scraping nearby page text, previous DOM-detected reminders are cleared and re-synced, main/tool-window opening and minimize/restore motion now animate the top-level window so WebView2 is included, and SHOPSS Browser has a new clean purple S application icon.",
-    "publishedUtc":  "2026-09-11T21:20:31.6339757Z"
+    "version":  "0.15.1",
+    "downloadUrl":  "https://shopss.me/browser/updates/SHOPSS-Browser-v0.15.1-update.zip",
+    "sha256":  "00CB67E4876F47420F6397A3C8CF8ECB02FB3C03AFC2D5E073D43766796C0E29",
+    "releaseNotes":  "v0.15.1 reminder-test release: adds a real Windows Task Scheduler test reminder in Settings \u003e College work so reminder delivery can be verified without waiting for a course deadline. All v0.15.0 Brightspace API, motion, icon, security and updater improvements remain.",
+    "publishedUtc":  "2026-09-11T23:04:00.1136555Z"
 }
