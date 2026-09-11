@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "0.14.4",
-    "downloadUrl":  "https://shopss.me/browser/updates/SHOPSS-Browser-v0.14.4-update.zip",
-    "sha256":  "9D965ACB1C62F0B9808A1DD8DCEF134E0A1C9B59800F63F0444BCE7DA7909995",
-    "releaseNotes":  "Daily Driver Essentials plus v0.14.4 updater compatibility fix: Windows PowerShell 5.1-safe update apply path handling, updater stage diagnostics, visible/native window motion, audio-safe Memory Saver, bookmarks bar, improved downloads, find-in-page, per-site zoom, print, startup controls, default-browser groundwork, and local D2L / Brightspace assignment reminders.",
-    "publishedUtc":  "2026-09-11T20:25:05.2724338Z"
+    "version":  "0.14.5",
+    "downloadUrl":  "https://shopss.me/browser/updates/SHOPSS-Browser-v0.14.5-update.zip",
+    "sha256":  "7D51F2B8E271C4F74B3FC321DC7B354466734A5F34A1DF4A60774FD9514EEBCB",
+    "releaseNotes":  "Daily Driver Essentials plus v0.14.5 updater lock fix: updater runs outside the install directory, backs up by copy instead of moving the live app folder, replaces files in place with retry handling, preserves rollback, and retains visible/native window motion, audio-safe Memory Saver, bookmarks, downloads, find, zoom, print, startup controls, default-browser groundwork, and local D2L / Brightspace assignment reminders.",
+    "publishedUtc":  "2026-09-11T20:32:28.5433018Z"
 }
