@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#3C205B">
-  <meta name="description" content="SHOPSS — projects, systems, hosted tools, and SHOPSS Idle.">
+  <meta name="description" content="SHOPSS — projects, systems, and things I build.">
   <title>SHOPSS</title>
   <link rel="icon" href="assets/shopss-logo.png">
   <link rel="stylesheet" href="styles.css?v=2.9">
@@ -21,6 +21,7 @@
     </a>
 
     <nav>
+      <a href="#browser">Browser</a>
       <a href="#projects">Projects</a>
       <a href="#stack">Stack</a>
       <a href="#links">Links</a>
@@ -41,12 +42,8 @@
         </p>
 
         <div class="hero-actions">
-          <a class="btn idle-launch" href="/idle/">
-            Play SHOPSS Idle
-            <span>ALPHA</span>
-          </a>
-          <a class="btn primary" href="#projects">View projects</a>
-          <a class="btn secondary" href="https://github.com/OP2U/shopss-desktop/releases/download/v1.0.0/SHOPSS-Desktop-Setup-v1.0.0.exe">Download Desktop</a>
+          <a class="btn primary" href="#browser">See the browser</a>
+          <a class="btn secondary" href="#projects">View projects</a>
           <a class="btn secondary" href="https://github.com/OP2U" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
       </div>
@@ -59,19 +56,19 @@
 
         <div class="system-row">
           <div>
+            <strong>SHOPSS Browser</strong>
+            <span>Private Windows daily driver</span>
+          </div>
+          <span class="status active">ACTIVE</span>
+        </div>
+
+        <div class="system-row">
+          <div>
             <strong>SHOPSS Desktop</strong>
             <span>Windows desktop system</span>
           </div>
           <span class="status active">ACTIVE</span>
         </div>
-
-        <a class="system-row system-link" href="/idle/">
-          <div>
-            <strong>SHOPSS Idle</strong>
-            <span>Hosted browser RPG</span>
-          </div>
-          <span class="status alpha">ALPHA</span>
-        </a>
 
         <div class="system-row">
           <div>
@@ -99,6 +96,53 @@
       </div>
     </section>
 
+    <section class="section browser-showcase reveal" id="browser">
+      <div class="section-head browser-showcase-head">
+        <div>
+          <p class="kicker">DAILY DRIVER</p>
+          <h2>SHOPSS Browser</h2>
+        </div>
+        <span class="browser-build">v0.15 · PRIVATE BUILD</span>
+      </div>
+
+      <div class="browser-stage">
+        <div class="browser-copy">
+          <span class="browser-live"><i></i> BUILT FOR MY OWN WORKFLOW</span>
+          <h3>I wanted my browser to feel like the rest of SHOPSS.</h3>
+          <p>
+            A custom Windows browser shell built in C# / WPF on Microsoft WebView2. It combines
+            the everyday browser features I use with profiles, Split View, extension support,
+            server telemetry, security hardening, automatic updates, and college due-date reminders.
+          </p>
+
+          <div class="browser-feature-grid">
+            <div class="browser-feature"><span>01</span><strong>Daily driver tabs</strong><small>Favicons, audio state, hover previews, folders, pinned + vertical tabs.</small></div>
+            <div class="browser-feature"><span>02</span><strong>Split View</strong><small>Two pages in one window with a draggable divider and session restore.</small></div>
+            <div class="browser-feature"><span>03</span><strong>Local profiles</strong><small>Separate cookies, history, bookmarks, extensions and sessions per profile.</small></div>
+            <div class="browser-feature"><span>04</span><strong>College reminders</strong><small>Brightspace due dates stored locally with Windows background reminders.</small></div>
+          </div>
+
+          <div class="browser-tags">
+            <span>C#</span><span>WPF</span><span>.NET 8</span><span>WebView2</span><span>Windows</span><span>Self-updating</span>
+          </div>
+        </div>
+
+        <div class="browser-visual">
+          <div class="browser-visual-top">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>SHOPSS Browser · v0.15</span>
+            <b>DAILY DRIVER</b>
+          </div>
+          <img src="assets/shopss-browser-v015.webp" alt="SHOPSS Browser v0.15 interface and feature showcase" loading="lazy">
+          <div class="browser-visual-bottom">
+            <span>SECURITY HARDENED</span>
+            <span>BUILT-IN UPDATER</span>
+            <span>SERVER HUD</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section reveal" id="projects">
       <div class="section-head">
         <div>
@@ -109,9 +153,32 @@
       </div>
 
       <div class="projects-grid">
-        <a class="project-card featured" href="projects/shopss-desktop.html">
+        <a class="project-card featured browser-project-card" href="#browser">
           <div class="project-meta">
             <span>01</span>
+            <span class="status active">DAILY DRIVER</span>
+          </div>
+
+          <div class="project-main">
+            <h3>SHOPSS Browser</h3>
+            <p>
+              My custom Windows browser built around WebView2 with isolated profiles, Split View,
+              Chromium extensions, responsive tabs, a VPS status HUD, college reminders, security
+              hardening, and a self-update channel hosted on shopss.me.
+            </p>
+          </div>
+
+          <div class="project-footer">
+            <div class="tags">
+              <span>C#</span><span>WPF</span><span>WebView2</span><span>.NET 8</span>
+            </div>
+            <span class="open-arrow">↓</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="projects/shopss-desktop.html">
+          <div class="project-meta">
+            <span>02</span>
             <span class="status active">ACTIVE</span>
           </div>
 
@@ -131,32 +198,6 @@
               <span>Windows</span>
             </div>
             <span class="open-arrow">↗</span>
-          </div>
-        </a>
-
-        <a class="project-card idle-card" href="/idle/">
-          <div class="project-meta">
-            <span>02</span>
-            <span class="status alpha">ALPHA</span>
-          </div>
-
-          <div class="project-main">
-            <div class="idle-project-kicker">HOSTED · DISCORD CLOUD SAVES</div>
-            <h3>SHOPSS Idle</h3>
-            <p>
-              A browser-based idle RPG with active combat, classes, companions, Forge upgrades,
-              six regions, a 100-tier free Adventure Pass, and persistent Discord-linked accounts.
-            </p>
-          </div>
-
-          <div class="project-footer">
-            <div class="tags">
-              <span>Node.js</span>
-              <span>SQLite</span>
-              <span>Discord OAuth</span>
-              <span>Game</span>
-            </div>
-            <span class="idle-play-label">PLAY ALPHA&nbsp; ↗</span>
           </div>
         </a>
 
@@ -249,8 +290,8 @@
           <span class="stack-live"><i></i> SHOPSS SYSTEM</span>
           <h3>One setup, multiple layers.</h3>
           <p>
-            The site, hosted game, bots, monitoring, desktop app, and deployment flow all connect
-            through a small stack built to stay lightweight and easy to maintain.
+            The site, browser, bots, monitoring, desktop app, and deployment flow all connect through
+            a small stack built to stay lightweight and easy to maintain.
           </p>
         </div>
 
@@ -288,7 +329,7 @@
             <span class="stack-state">LIVE</span>
           </div>
           <h3>DigitalOcean + Ubuntu</h3>
-          <p>The VPS layer hosting the site, SHOPSS Idle, Discord automation, and server-status collector.</p>
+          <p>The VPS layer hosting the site, Discord automation, and server-status collector.</p>
           <div class="stack-tags">
             <span>Ubuntu 24.04</span>
             <span>VPS</span>
@@ -321,20 +362,6 @@
             <span>Git</span>
             <span>systemd</span>
             <span>Auto-deploy</span>
-          </div>
-        </article>
-
-        <article class="stack-card accent-teal">
-          <div class="stack-card-top">
-            <span class="stack-code">GAME</span>
-            <span class="stack-state">ALPHA</span>
-          </div>
-          <h3>Node.js + Discord OAuth</h3>
-          <p>SHOPSS Idle runs as a private Node service behind Nginx with Discord-linked accounts and persistent server saves.</p>
-          <div class="stack-tags">
-            <span>Node.js 24</span>
-            <span>Discord OAuth</span>
-            <span>SQLite</span>
           </div>
         </article>
 
@@ -372,7 +399,7 @@
             <span class="stack-state">LOCAL</span>
           </div>
           <h3>SQLite + Monitoring</h3>
-          <p>Persistent game saves, server telemetry, monitoring data, and privacy-friendly site analytics.</p>
+          <p>Small persistent data stores, server telemetry, and privacy-friendly site analytics.</p>
           <div class="stack-tags">
             <span>SQLite</span>
             <span>JSON</span>

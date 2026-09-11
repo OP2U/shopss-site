@@ -30,11 +30,10 @@ https://github.com/OP2U/shopss-site
 - Added an infrastructure flow diagram and richer responsive stack cards.
 
 
-## v2.9 — SHOPSS Idle Hosted Alpha
+## v2.9
 
-- Added a prominent **Play SHOPSS Idle** hero button linking to `/idle/`.
-- Added SHOPSS Idle to the **Live Systems** panel and increased the system count to 05.
-- Added a dedicated SHOPSS Idle project card with Alpha styling and current feature summary.
-- Added **Node.js + Discord OAuth** to the infrastructure section.
-- Updated VPS/data descriptions to include hosted game saves.
-- Bumped the stylesheet cache key to `v=2.9`.
+- Added a dedicated **SHOPSS Browser** showcase section to the homepage.
+- Added SHOPSS Browser to the live systems panel and project grid.
+- Added a responsive v0.15 browser visual, daily-driver feature cards, stack tags, and status details.
+- Updated the homepage navigation and live-system count for the browser.
+- Preserved the existing v2.8 dark/purple design, infrastructure section, Desktop links, and Cloudflare Web Analytics.
